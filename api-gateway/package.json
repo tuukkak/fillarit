@@ -1,0 +1,26 @@
+{
+    "name": "fillarit-api-gateway",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.ts",
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "dev": "nodemon -w src --exec ts-node src/index.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/tuukkak/fillarit.git"
+    },
+    "author": "Tuukka Koivisto <koivisto.tuukka@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@types/express": "^4.17.0",
+        "express": "^4.17.1",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.2"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.1"
+    }
+}
