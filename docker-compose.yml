@@ -1,0 +1,13 @@
+version: '3'
+services:
+    ui:
+        build: ./ui
+        ports:
+            - 80:8080
+    api-gateway:
+        build: ./api-gateway
+        environment:
+            - NODE_ENV=dev
+        volumes:
+            - ./api-gateway/src:/src
+        command: npm run dev
